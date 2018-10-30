@@ -3,6 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Form330.App">
     <Application.Resources>
-
+        <Style TargetType="Page" ApplyToDerivedTypes="True">
+            <Setter Property="BackgroundColor" Value="White"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#095AAB"/>
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="Margin" Value="0,15"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="BackgroundColor" Value="#BE1A63"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
     </Application.Resources>
 </Application>

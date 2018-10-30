@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Form330.LabelDecorations"
+             Title="Xamarin.Forms 3.3.0">
+    <StackLayout Padding="5">
+        <Label FontSize="16"  LineBreakMode="WordWrap"
+               HorizontalOptions="FillAndExpand">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="En Forms tu" />
+                    <Span Text=" NO " TextDecorations="Strikethrough"/>
+                    <Span Text="PUEDES " TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"/>
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span Text="hacer esto"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+</ContentPage>

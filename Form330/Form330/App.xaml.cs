@@ -11,7 +11,7 @@ namespace Form330
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new LabelDecorations());
         }
 
         protected override void OnStart()
